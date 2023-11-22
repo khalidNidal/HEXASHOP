@@ -1,0 +1,13 @@
+
+
+.imgcontainer{
+    position: relative;
+    height: 300px;
+    margin: 10px 10px;
+    
+}
+
+.subimg{
+    margin: 10px 10px;
+    text-align: center;
+}

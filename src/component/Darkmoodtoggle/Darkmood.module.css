@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: row ;
+    border: solid 2px var(--color-primary);
+    border-radius: 30px;
+    padding: 2px 2px;
+    position: relative;
+}
+
+.icon{
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.switcher{
+    width: 25px;
+    aspect-ratio: 1/1; /* to make the height equal to the width */
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    position: absolute;
+    cursor: pointer;
+}

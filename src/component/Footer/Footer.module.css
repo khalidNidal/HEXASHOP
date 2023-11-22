@@ -1,0 +1,19 @@
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon{
+    opacity: .6;
+}
+
+.icon:hover{
+    opacity: 1;
+}
