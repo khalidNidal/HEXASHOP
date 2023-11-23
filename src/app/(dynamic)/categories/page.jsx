@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function portfolio() {
+export default function categories() {
   return (
     <div>
-      portfolio
+      Soon .......
     </div>
   )
 }

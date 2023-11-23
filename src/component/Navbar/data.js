@@ -8,8 +8,8 @@ export const links = [
 
     {
         id:2,
-        title:"Portfolio",
-        url:'/portfolio',
+        title:"Categories",
+        url:'/categories',
 
 
     },

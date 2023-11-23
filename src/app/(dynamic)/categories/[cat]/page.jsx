@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function art() {
+export default function cat() {
   return (
     <div>
-      art
+      cat
     </div>
   )
 }
