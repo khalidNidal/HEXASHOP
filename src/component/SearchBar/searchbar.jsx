@@ -1,6 +1,5 @@
 "use client";
 
-import { CForm, CFormInput } from "@coreui/react";
 // import { useEffect, useState } from "react";
 import styles from "./search.module.css"
 
