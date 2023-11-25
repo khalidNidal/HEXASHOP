@@ -1,9 +1,13 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import image from "public/images/undraw_empty_cart_co35.svg";
+import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 export default function page() {
+  
   return (
+    
     <>
       <div className={styles.container}>
         <div className={styles.col}>
@@ -19,6 +23,9 @@ export default function page() {
           ></Image>
         </div>
       </div>
+
+
+      
     </>
   );
 }

@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import styles from "./page.module.css";
+import styles from "./slide.module.css";
 import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -48,39 +48,3 @@ export default async function catigores() {
     </>
   );
 }
-
-// return (
-//   <>
-//     <div className={styles.container}>
-//       <div className={styles.swiper}>
-//       <Swiper
-//         style={{
-//           "--swiper-pagination-color": "green",
-//           "--swiper-pagination-bullet-inactive-color": "#999999",
-//           "--swiper-pagination-bullet-inactive-opacity": "1",
-//         }}
-//         slidesPerView={3}
-//         spaceBetween={50}
-//         centeredSlides={true}
-//         autoplay={{
-//           delay: 5000,
-//         }}
-//         pagination={{
-//           clickable: true,
-//         }}
-//         modules={[Autoplay, Pagination, Navigation]}
-//       >
-//           <div>
-//             {Catigores.map((catigore) => {
-//               return (
-//                 <Link href={`/categories/${catigore}`} >
-//                 <SwiperSlide className={styles.a}><p>{catigore}</p></SwiperSlide>
-//                 </Link>
-//               );
-//             })}
-//           </div>
-//       </Swiper>
-//       </div>
-//     </div>
-//   </>
-// );

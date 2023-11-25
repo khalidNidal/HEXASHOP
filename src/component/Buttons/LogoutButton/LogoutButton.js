@@ -1,4 +1,4 @@
-"use client"
+  "use client"
 import styles from './LogoutButton.module.css'
 export default function LogoutButton() {
   return (
