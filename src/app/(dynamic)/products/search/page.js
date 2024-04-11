@@ -3,31 +3,31 @@
 import Image from "next/image";
 import styles from "./products.module.css";
 import Link from "next/link";
-import axios from "axios";
-import Bar from "../../../component/SearchBar/searchbar";
-import { useRouter } from "next/navigation";
 
-async function getdata() {
-  const res = await fetch("https://dummyjson.com/products");
-  return res.json();
-}
-// async function getsdata() {
-//   const res = await fetch('https://dummyjson.com/products/search?q=phone');
-//   return res.json();
-// }
+import Bar from "../../../../component/SearchBar/searchbar";
 
-export default async function blog() {
-  // 
 
-  const data = await getdata();
-  // console.log("🚀 ~ file: page.jsx:12 ~ blog ~ data:", data)
-  const products = data.products;
-  // console.log("🚀 ~ file: page.jsx:14 ~ blog ~ products:", products);
+
+
+export default async function blog(params) {
+  const query  = params.searchParams.q;
+  console.log("🚀 ~ blog ~ paramss:", query)
   
-  // const s = await getsdata();
-  // console.log("🚀 ~ blog ~ s:", s)
-  // const ss = s.products.id=1;
-  // console.log("🚀 ~ blog ~ ss:", ss)
+  // let pathname = usePathname(); 
+  // console.log("🚀 ~ blog ~ pathname:", pathname)
+  
+
+  async function getdata() {
+    const res = await fetch(`https://dummyjson.com/products/search?q=${query}`);
+    return res.json();
+  }
+  
+  
+  const s = await getdata();
+  console.log("🚀 ~ blog ~ s:", s)
+  const products = s.products;
+  console.log("🚀 ~ blog ~ products:", products)
+  
 
   return (
     products.length === 0 ? <>
@@ -40,25 +40,9 @@ export default async function blog() {
     :
     <>
       <div className={styles.main}>
-        <div>
-
-        <Bar/>
-        </div>
-
-
-        
-        {/* <form>
-          <input
-            // onChange={(e) => {
-            //   setVal(e.target.value);
-            //   e.preventDefault();
-            // }}
-            type="text"
-            placeholder="search for products"
-            className={styles.input}
-          ></input>
-        </form> */}
+      <Bar/>
       </div>
+
 
       <div className={styles.main}>
         {products.map((product) => (
@@ -88,3 +72,11 @@ export default async function blog() {
     </>
   );
 }
+
+// export default function Search () {
+//   return (
+//     <div>
+//       asd
+//     </div>
+//   )
+// }

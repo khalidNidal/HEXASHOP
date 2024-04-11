@@ -1,13 +1,30 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 
-
-.imgcontainer{
-    position: relative;
-    height: 300px;
-    margin: 10px 10px;
-    
 }
 
-.subimg{
-    margin: 10px 10px;
+.container{
     text-align: center;
+    margin: auto;
+
+
+}
+.imgcontainer {
+  position: relative;
+  height: 300px;
+  margin: 10px 10px;
+}
+
+.subimg {
+  margin: 10px 10px;
+  text-align: center;
+}
+.content{
+    width: 45%;
+   font-size: 20px;
+    line-height: 25px;
+    
 }

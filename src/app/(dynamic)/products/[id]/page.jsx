@@ -16,6 +16,7 @@ export default async function post({ params }) {
 
   return (
     <>
+    <div className={styles.mainContainer}>
       <header className={styles.container}>
         <div className={styles.info}>
           <h1>{product.title}</h1>
@@ -52,6 +53,7 @@ export default async function post({ params }) {
           provident quibusdam mollitia perspiciatis omnis dolores quaerat
           dolorem magnam tenetur praesentium architecto?
         </p>
+      </div>
       </div>
     </>
   );

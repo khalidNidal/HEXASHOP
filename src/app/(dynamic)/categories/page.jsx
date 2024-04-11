@@ -40,7 +40,7 @@ export default async function catigores() {
     <>
       <div className={styles.container}>
         <div className={styles.swiper}>
-          <Carousel autoPlay infiniteLoop showArrows={false} interval={6000} >
+          <Carousel autoPlay infiniteLoop showArrows={false} interval={3000} >
             {displaySlides()}
           </Carousel>
         </div>
@@ -49,38 +49,3 @@ export default async function catigores() {
   );
 }
 
-// return (
-//   <>
-//     <div className={styles.container}>
-//       <div className={styles.swiper}>
-//       <Swiper
-//         style={{
-//           "--swiper-pagination-color": "green",
-//           "--swiper-pagination-bullet-inactive-color": "#999999",
-//           "--swiper-pagination-bullet-inactive-opacity": "1",
-//         }}
-//         slidesPerView={3}
-//         spaceBetween={50}
-//         centeredSlides={true}
-//         autoplay={{
-//           delay: 5000,
-//         }}
-//         pagination={{
-//           clickable: true,
-//         }}
-//         modules={[Autoplay, Pagination, Navigation]}
-//       >
-//           <div>
-//             {Catigores.map((catigore) => {
-//               return (
-//                 <Link href={`/categories/${catigore}`} >
-//                 <SwiperSlide className={styles.a}><p>{catigore}</p></SwiperSlide>
-//                 </Link>
-//               );
-//             })}
-//           </div>
-//       </Swiper>
-//       </div>
-//     </div>
-//   </>
-// );

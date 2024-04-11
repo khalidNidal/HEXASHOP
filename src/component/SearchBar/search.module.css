@@ -1,8 +1,41 @@
-.input{
-    padding: 10px 30px;
-    background-color: aliceblue;
-    border:none;
-    border-radius: 5px;
-    color: black;
-    border: 1px solid black;
+
+.form{
+    position: relative;
+    background-color: rgb(62, 129, 109);
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+
+
+}
+.button{
+    background-color: rgb(62, 129, 109);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.input {
+    background-color: rgb(62, 129, 109);
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 15px;
+    width: 100%;
+    background: none;
+    outline-width: 0;
+    opacity: 0.7;
+
+}
+
+.input::placeholder{
+    color: white;
+    font-size: 15px;
+    border: none;
 }
