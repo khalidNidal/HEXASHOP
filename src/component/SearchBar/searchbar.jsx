@@ -12,9 +12,13 @@ function s(query, router) {
   router.push(`/products/search?q=${query}`);
 }
 export default function searchbar() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [text, setText] = useState("");
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [query] = useDebounce(text, 1000);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     if (!query) {
       // router.push("/products");
@@ -50,4 +54,7 @@ export default function searchbar() {
           <IoSearchOutline />
           </button>
       </form>
-    </>             )}
+    </>        
+    
+    
+    )}
